@@ -1,4 +1,4 @@
-setwd("/Users/mguardado1/Desktop/UCSF/Coursework/BMI206/FinalProject/networks/")
+setwd("/networks/data/")
 library(reshape2)
 library(ggplot2)
 library(caret)
