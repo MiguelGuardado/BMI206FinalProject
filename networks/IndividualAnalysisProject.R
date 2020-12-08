@@ -1,4 +1,4 @@
-setwd("/Users/mguardado1/Desktop/UCSF/Coursework/BMI206/FinalProject/networks/")
+setwd("/networks/data/")
 library(reshape2)
 library(ggplot2)
 library(tidyverse)
@@ -85,21 +85,21 @@ p1<-ggplot(df_out,aes(x=PC1,y=PC2,color=group))
 p1<-p1+geom_point() + ggtitle('PC1 vs PC2')
 
 p1
-ggsave("PC1PC2.png")
+ggsave("/networks/Images/PC1PC2.png")
 
 p2<-ggplot(df_out,aes(x=PC2,y=PC3,color=group))
 
 p2<-p2+geom_point() + ggtitle('PC2 vs PC3')
 
 p2
-ggsave("PC2PC3.png")
+ggsave("/networks/Images/PC2PC3.png")
 
 
 p3<-ggplot(df_out,aes(x=PC3,y=PC4,color=group))
 p3<-p3+geom_point() + ggtitle('PC3 vs PC4')
 
 p3
-ggsave("PC3PC4.png")
+ggsave("/networks/Images/PC3PC4.png")
 
 
 #####SUB_PCA_PLOT >:)
@@ -119,7 +119,7 @@ NetworkStatisticsSub$Essential <- mapvalues(NetworkStatisticsSub$Essential,  fro
 p4<-ggplot(df_out,aes(x=PC1,y=PC2,color=group))
 p4<-p4+geom_point() + ggtitle('PCA of BridgingCentrality+CascadeNum')
 p4
-X
+
 
 
 
